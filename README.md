@@ -32,3 +32,10 @@ several symbols live in the embedded `Cart Adapter-eagle-import` library.
 ## Revision
 
 v1.3
+
+## TheHulk ISA card (branch `thehulk-isa`)
+
+[`thehulk-isa/`](thehulk-isa/) is RetroLoft's [TheHulk](https://github.com/RetroLoft/thehulk)
+network/SD storage cartridge moved onto this card, fed from the ISA edge or J1, with the SD card,
+USB, status LED and MODE button on the bracket tab. KiCad 9, GPL-3.0. Placement done, TheHulk core
+routed, ISA edge to J1 still to route: see [`thehulk-isa/ROUTING.md`](thehulk-isa/ROUTING.md).

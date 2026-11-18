@@ -1,0 +1,247 @@
+(footprint "USB_Micro-B_C10418"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Micro USB B receptacle, horizontal, SMD with 4 plated shell legs, LCSC C10418 (Jing Extension 920-E52A2021S10100). Pads from the EasyEDA footprint. The flange front is 4.0 mm in front of the origin.")
+	(tags "USB Micro B C10418")
+	(property "Reference" "REF**"
+		(at 0 -3 0)
+		(layer "F.SilkS")
+		(uuid "a8b970b4-1519-480c-bade-6e807af61ee6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "USB_Micro-B_C10418"
+		(at 0 5.3 0)
+		(layer "F.Fab")
+		(uuid "b7e5e0d0-15b6-4a05-90ca-17339dde668f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -4.0 -1.6)
+		(end 4.0 -1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6f29efcb-646a-4037-ba87-34c51a116074")
+	)
+	(fp_line
+		(start 4.0 -1.6)
+		(end 4.0 4.0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "77e12e50-d91f-4ce4-92f5-a3c993bdb32f")
+	)
+	(fp_line
+		(start 4.0 4.0)
+		(end -4.0 4.0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "3dba1759-f7f4-4bad-ad84-9c5bdba3a3c9")
+	)
+	(fp_line
+		(start -4.0 4.0)
+		(end -4.0 -1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f87e7e8b-154b-4d49-9b15-a2fef40cdeef")
+	)
+	(fp_line
+		(start 3.18 -1.7)
+		(end 3.85 -1.7)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f8ecb730-0bba-4bf6-b830-006f9ef2ba17")
+	)
+	(fp_line
+		(start 3.85 -1.7)
+		(end 3.85 0.2)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "28802d85-8d40-42b3-826a-0496edfce3de")
+	)
+	(fp_line
+		(start -3.18 -1.7)
+		(end -3.85 -1.7)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "15df482a-f6c4-456a-a240-6846dd8f1ea2")
+	)
+	(fp_line
+		(start -3.85 -1.7)
+		(end -3.85 0.2)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "758c03c2-88ca-4452-ac08-0aeda5a0275a")
+	)
+	(fp_line
+		(start -4.5 -2.3)
+		(end 4.5 -2.3)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "03d48dda-6330-413d-9926-c28a54ae49d9")
+	)
+	(fp_line
+		(start 4.5 -2.3)
+		(end 4.5 4.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3b1946bd-0d38-4c08-b9dd-4bb9da061316")
+	)
+	(fp_line
+		(start 4.5 4.5)
+		(end -4.5 4.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "654aa074-26e4-4494-ada2-d1b2c1c8b13a")
+	)
+	(fp_line
+		(start -4.5 4.5)
+		(end -4.5 -2.3)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "0cedfdd4-05c3-4de8-bc91-c2057b5060f3")
+	)
+	(fp_text user "Flange front at y = 4.0"
+		(at 0 3.2 0)
+		(layer "Cmts.User")
+		(uuid "8d328d6e-9d70-4ec6-8ed0-5d2d7a77368a")
+		(effects
+			(font
+				(size 0.3 0.3)
+				(thickness 0.05)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 1.2 0)
+		(layer "F.Fab")
+		(uuid "292cf995-0c9d-4d9e-9b60-510a9ed309b5")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.3 -1.3)
+		(size 0.4 1.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "66b6003f-d737-454a-bd85-fd5f45fa1777")
+	)
+	(pad "2" smd rect
+		(at -0.65 -1.3)
+		(size 0.4 1.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e123ac17-d7e1-4a65-aef1-39d18e351dca")
+	)
+	(pad "3" smd rect
+		(at 0 -1.3)
+		(size 0.4 1.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "17ac4bab-6f27-4277-b955-649687132510")
+	)
+	(pad "4" smd rect
+		(at 0.65 -1.3)
+		(size 0.4 1.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "414d3486-12bf-4105-ae91-c5b1fe683464")
+	)
+	(pad "5" smd rect
+		(at 1.3 -1.3)
+		(size 0.4 1.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "fcab3624-49f6-418a-a470-1adbcdf1e735")
+	)
+	(pad "6" thru_hole oval
+		(at -3.6 1.325)
+		(size 1.1 1.9)
+		(drill oval 0.6 1.4)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "3cd49e80-bd5b-4ebc-9bca-37264ed509d7")
+	)
+	(pad "6" thru_hole oval
+		(at 3.6 1.325)
+		(size 1.1 1.9)
+		(drill oval 0.6 1.4)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "ecbad4c8-21bf-4b23-91f2-f3fda3a66ad2")
+	)
+	(pad "6" thru_hole circle
+		(at -2.425 -1.325)
+		(size 1.2 1.2)
+		(drill 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "32e0e59d-6607-4d1d-aca8-363da95d72a1")
+	)
+	(pad "6" thru_hole circle
+		(at 2.425 -1.325)
+		(size 1.2 1.2)
+		(drill 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "fba40695-2d5a-4a60-94e0-abcb6ac82442")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/USB_Micro-B_C10418.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

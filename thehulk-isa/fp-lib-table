@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "footprints")(type "KiCad")(uri "${KIPRJMOD}/footprints.pretty")(options "")(descr "TheHulk footprints"))
+  (lib (name "isa_card")(type "KiCad")(uri "${KIPRJMOD}/isa_card.pretty")(options "")(descr "ISA card footprints from the mATX ISA cartridge board v1.3"))
+)

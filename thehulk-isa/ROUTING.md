@@ -1,29 +1,26 @@
-# Routing status
+# Layout status
 
 KiCad 9.0.3, `kicad-cli pcb drc --schematic-parity`:
 
 | Check | Result |
 |---|---|
 | Schematic parity | 0 issues |
-| Copper clearance, shorts, board edge, outline | 0 errors |
-| Unrouted connections | 61 |
-| Silkscreen overlaps / silk over copper / silk to edge | 14 / 3 / 8 (cosmetic) |
-| Footprint differs from library | 60: TheHulk's footprints vs. the stock KiCad 9 libraries, as upstream |
+| Unrouted connections | 303: TheHulk's parts are not placed yet |
+| Clearance | 3, all inside the v1.3 routing (A13 near J1 pad 11, D14 near J1 pad 2), same as the v1.3 board |
+| Invalid outline | 11: the v1.3 outline as it is (ST1's built-in edge lines overlap the board's own edge lines, one small gap at x = 229.1 mm, y = 71.1 mm, one stray line at x = 207.6 mm); the v1.3 board shows the same in KiCad 9 |
+| Silkscreen / footprint library notes | cosmetic, or TheHulk's footprints vs. stock KiCad 9 libraries |
 
-## Routed
+## Done
 
-- TheHulk's whole core, exactly as RetroLoft routed it (rotated 90°).
-- The fan-out from TheHulk's old gold-finger tracks to J1 (pin order matches, no crossings;
-  even pins on B.Cu to the upper row, odd pins on F.Cu between the upper-row pads to the lower row).
-- GND pour on both layers (refill after routing: press B).
+- v1.3 ISA edge to J1 and /ROM pad routing: complete for every signal (D0-D15, A1-A15, /UDS, /LDS,
+  /ROM3, /ROM4).
 
-## Still to route (61)
+## To do
 
-| Group | Count | Notes |
-|---|---|---|
-| ISA edge ST1 to J1 | 45 | D0–D15, A1–A15, /UDS, /LDS, +5V_CART, GND fingers. The ISA pin order is not the cartridge order, so this needs real routing. No tracks along or between the gold fingers, no vias in the finger keep-out (rule area above the fingers). GND fingers only need a short track and a via into the pour. |
-| Tab parts | 14 | USB J3 (VBUS, D+, D-), microSD Card1 (SCLK, MOSI, MISO, SD_CS, CD, +3V3_ESP), MODE button SW1 (BTN1), status LED D6 (+5V_SYS, DIN from D5). The tracks that went to these parts on TheHulk were removed when the parts moved to the tab. Keep USB D+/D- as a pair. |
-| /ROM3, /ROM4 pads | 2 | To J1 pins 31 and 33. |
-
-Suggested widths: +5V_CART and +5V_SYS 0.5 mm or more, signals 0.25 mm (TheHulk's default netclass:
-0.2 mm track, 0.2 mm clearance).
+- Place TheHulk's parts on the card. USB (J3), microSD (Card1), MODE button (SW1) and the status
+  LED (D6) go on the tab through the bracket if they need to be reached from outside the case.
+- Route TheHulk. Its bus side connects to the same nets as J1, so it can join your v1.3 tracks or
+  J1's pads.
+- GND and +5V between ISA fingers (B1, B10, B29, B31, A11, C2-C5, D16, D18) are not routed, as on
+  v1.3. A GND pour plus a +5V track would close them.
+- Add a GND pour if wanted.

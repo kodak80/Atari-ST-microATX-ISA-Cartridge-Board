@@ -35,7 +35,7 @@ v1.3
 
 ## TheHulk ISA card (branch `thehulk-isa`)
 
-[`thehulk-isa/`](thehulk-isa/) is RetroLoft's [TheHulk](https://github.com/RetroLoft/thehulk)
-network/SD storage cartridge moved onto this card, fed from the ISA edge or J1, with the SD card,
-USB, status LED and MODE button on the bracket tab. KiCad 9, GPL-3.0. Placement done, TheHulk core
-routed, ISA edge to J1 still to route: see [`thehulk-isa/ROUTING.md`](thehulk-isa/ROUTING.md).
+[`thehulk-isa/`](thehulk-isa/) merges RetroLoft's [TheHulk](https://github.com/RetroLoft/thehulk)
+network/SD storage cartridge onto this card: schematic done, PCB is this v1.3 board with the socket
+and RTC removed and TheHulk's parts added, ready to be placed. KiCad 9, GPL-3.0. See
+[`thehulk-isa/ROUTING.md`](thehulk-isa/ROUTING.md).

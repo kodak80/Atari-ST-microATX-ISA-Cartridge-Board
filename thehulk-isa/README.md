@@ -23,27 +23,17 @@ KiCad 9 project, based on TheHulk `hardware/prod-v2` (commit `c8f1c73`).
 
 ## PCB
 
-- Card outline from v1.3, with two changes:
-  - the sloping top edge now starts further left (top-left corner at x = 176.4 mm instead of
-    207.6 mm) to make room for TheHulk's core. Check this against the case.
-  - the tab that goes through the bracket is 6 mm longer (edge at x = 248.8 mm instead of
-    242.8 mm), so the whole microSD socket sits outside the bracket. The tab now sticks out about
-    18.3 mm behind the bracket.
-- TheHulk's routed core sits in the tall section next to the bracket, rotated 90°. Its routing is
-  kept as RetroLoft laid it out. The ESP32-S3 antenna overhangs the top edge as it overhangs the
-  cartridge PCB on TheHulk: 106.1 mm above the bottom of the ISA edge, inside the ISA full-height
-  limit of 106.7 mm.
-- The old gold-finger tracks of TheHulk fan out straight into J1. The pin order follows the fingers,
-  so there are no crossings.
-- User-facing parts are on the tab that goes through the bracket (where v1.3 had the cartridge
-  socket): USB (J3), status LED (D6), MODE button (SW1) and microSD socket (Card1). The SD card goes
-  in from outside the case.
-- GND pour on both layers over the whole card, kept off the gold fingers.
+Fresh start from the v1.3 board (`Cart Adapter RTC 40 pin Header SMD CR1220.kicad_pcb`):
 
-## Status
-
-See `ROUTING.md` for what is routed and what is left. The board passes the KiCad 9 schematic
-parity check. Remaining DRC items are listed there too.
+- **Kept exactly as v1.3:** card outline, ISA edge (ST1), J1 and the /ROM3, /ROM4 pads in their
+  v1.3 positions, and your v1.3 routing between the ISA edge, J1 and the /ROM pads.
+- **Removed:** the cartridge socket, the FMC-II RTC (Dallas socket, crystal, CR1220 holder), their
+  silkscreen labels, and the v1.3 tracks that only went to them.
+- **Added, not placed:** all 74 of TheHulk's parts (everything except its cartridge edge), with
+  their nets, sitting below the card in TheHulk's own arrangement under the label
+  "TheHulk parts - to be placed". No tracks.
+- Net class: TheHulk's (0.2 mm tracks, 0.6/0.3 mm vias) with the clearance set to 0.1524 mm (6 mil),
+  the clearance your v1.3 routing was laid out to. TheHulk's own layout also meets it.
 
 ## License
 
